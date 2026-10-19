@@ -1,0 +1,20 @@
+# API keys and secret information
+.env
+.env.*
+
+# Python files
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Node.js dependencies
+node_modules/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# VS Code settings
+.vscode/
