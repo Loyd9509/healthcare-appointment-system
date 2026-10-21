@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import Doctors from "./components/Doctors";
 function App() {
   return (
     <div className="app">
@@ -9,6 +10,7 @@ function App() {
       <main>
         <Hero />
         <Services />
+        <Doctors />
       </main>
 
       <footer className="footer">
