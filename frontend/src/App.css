@@ -1,0 +1,419 @@
+#root {
+  width: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: #35264a;
+  background: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  min-height: 82px;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #f0eaf8;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.logo-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: #ffffff;
+  background: #9b7bd3;
+  border-radius: 12px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #746a80;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #8a65c2;
+}
+
+.nav-button,
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 21px;
+  border-radius: 12px;
+  color: #ffffff;
+  background: #8f6bc3;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+  background: #7550aa;
+  transform: translateY(-2px);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 60px;
+  padding: 90px 10% 100px;
+  background: linear-gradient(120deg, #fbf9ff, #f0e8ff);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #8968b8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 22px 0;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #8e6ac4;
+}
+
+.hero-content > p {
+  max-width: 470px;
+  color: #756b81;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border: 1px solid #d9c9ef;
+  border-radius: 12px;
+  color: #73539d;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.secondary-button:hover {
+  background: #f8f3ff;
+}
+
+.trust-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  color: #756b81;
+  font-size: 13px;
+}
+
+.trust-icon {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  background: #8f6bc3;
+  border-radius: 50%;
+}
+
+.hero-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 380px;
+}
+
+.medical-card {
+  width: min(100%, 390px);
+  padding: 40px 34px;
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 25px 70px rgba(97, 69, 135, 0.13);
+}
+
+.medical-symbol {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 25px;
+  border-radius: 22px;
+  color: #8d69c2;
+  background: #eee5ff;
+  font-size: 38px;
+}
+
+.medical-label {
+  color: #9476bd;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.medical-card h2 {
+  margin: 14px 0;
+  font-size: 29px;
+  line-height: 1.3;
+}
+
+.medical-card p {
+  color: #81768c;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid #eee8f5;
+  color: #625673;
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #78bc93;
+}
+
+.floating-badge {
+  position: absolute;
+  right: -10px;
+  bottom: 28px;
+  padding: 15px 19px;
+  border-radius: 14px;
+  color: #75549e;
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(97, 69, 135, 0.12);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.services {
+  padding: 85px 9%;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 14px 0 10px;
+  font-size: clamp(28px, 4vw, 38px);
+  letter-spacing: -1px;
+}
+
+.section-heading p {
+  color: #81768c;
+  line-height: 1.7;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  padding: 30px 25px;
+  border: 1px solid #eee7f8;
+  border-radius: 20px;
+  background: #ffffff;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(97, 69, 135, 0.09);
+}
+
+.service-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  color: #8968b8;
+  background: #f0e8ff;
+  font-size: 27px;
+}
+
+.service-card h3 {
+  margin: 22px 0 10px;
+  font-size: 19px;
+}
+
+.service-card p {
+  margin-bottom: 0;
+  color: #81768c;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 30px 9%;
+  border-top: 1px solid #f0eaf8;
+}
+
+.footer p {
+  color: #81768c;
+  font-size: 13px;
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    padding: 18px 5%;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 65px 7%;
+  }
+
+  .hero-content {
+    max-width: 650px;
+  }
+
+  .hero-visual {
+    min-height: 350px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    padding: 65px 7%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-button {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 50px 6%;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions a {
+    width: 100%;
+  }
+
+  .medical-card {
+    padding: 30px 25px;
+  }
+
+  .floating-badge {
+    right: 0;
+    bottom: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
