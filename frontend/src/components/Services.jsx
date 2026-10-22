@@ -16,14 +16,18 @@ function Services() {
         </a>
 
         {/* Book Appointments */}
-        <a className="service-card" id="appointments" href="#appointments">
+        <a
+          className="service-card"
+          id="appointment-service-card"
+          href="#booking"
+        >
           <div className="service-icon">▦</div>
           <h3>Book Appointments</h3>
           <p>Plan your visit with a simple booking experience.</p>
         </a>
 
         {/* Patient First */}
-        <a className="service-card" id="about" href="#about">
+        <a className="service-card" id="patient-first-card" href="#about">
           <div className="service-icon">♡</div>
           <h3>Patient First</h3>
           <p>Designed to make accessing care more convenient.</p>

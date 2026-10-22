@@ -498,3 +498,66 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* Booking Section */
+.booking-section {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+.booking-form {
+  max-width: 650px;
+  margin: 40px auto 0;
+  padding: 35px;
+  background: #f3eeff;
+  border: 1px solid #e5dcf7;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(53, 38, 74, 0.06);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  color: #35264a;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d8cbea;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #35264a;
+  font: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #b99ae8;
+  border-color: #7652a8;
+}
+
+.booking-form .primary-button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+@media (max-width: 550px) {
+  .booking-section {
+    padding: 55px 6%;
+  }
+
+  .booking-form {
+    padding: 22px;
+  }
+}
